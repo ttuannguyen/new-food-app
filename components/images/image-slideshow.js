@@ -30,7 +30,7 @@ export default function ImageSlideshow() {
       setCurrentImageIndex((prevIndex) =>
         prevIndex < images.length - 1 ? prevIndex + 1 : 0
       );
-    }, 5000);
+    }, 5000); // to rotate the images every 5 secs
 
     return () => clearInterval(interval);
   }, []);
